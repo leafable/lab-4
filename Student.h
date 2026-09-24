@@ -21,4 +21,20 @@ public:
         this->name = name;
         this->id = id;
     };
+    void setName(string name)
+    {
+        this->name = name;
+    };
+    void setId(int id)
+    {
+        this->id = id;
+    };
+    string getName()
+    {
+        return name;
+    };
+    int getId()
+    {
+        return id;
+    };
 };
