@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+bool Student::removeById(int id) {
+
+    if (ids.find(id) != ids.end()) {
+        ids.erase(id);
+        return true;
+    }
+
+    return false;
+}
+
 int main(){
 
 

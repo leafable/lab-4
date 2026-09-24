@@ -15,10 +15,10 @@ public:
     {
         name = "";
         id = 0;
-    }
-    Student(string name, int id);
+    };
+    Student(string name, int id)
     {
         this->name = name;
         this->id = id;
-    }
+    };
 };
