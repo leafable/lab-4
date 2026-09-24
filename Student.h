@@ -4,15 +4,21 @@
 
 using namespace std;
 
-class Student()
+class Student
 {
 private:
     string name;
     int id;
 
 public:
-    int findByName(Student& student[], string name);
-    bool removeById(int id);
-    void printAll();
-    int menu();
+    Student()
+    {
+        name = "";
+        id = 0;
+    }
+    Student(string name, int id);
+    {
+        this->name = name;
+        this->id = id;
+    }
 };
