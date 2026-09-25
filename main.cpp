@@ -12,15 +12,16 @@ int findById(Student students[], int size, int id) {
 }
 
 bool removeById(Student students[], int size,int id) {
+    bool found = false;
     int index = findById(students, size, id);
     if (index != -1) {
         for (int i = index; i < size - 1; i++) {
             students[i] = students[i + 1];
         }
         students[size - 1] = Student();
-        return true;
+        return found;
     }
-    return false;
+    return found;
 }
 
 int main(){
