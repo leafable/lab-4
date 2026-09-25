@@ -11,7 +11,7 @@ int findById(Student students[], int size, int id) {
     return -1; // Not found
 }
 
-bool removeById(Student students[], int size,int id) {
+bool removeById(Student& students, int size,int id) {
     int index = findById(students, size, id);
     if (index != -1) {
         for (int i = index; i < size - 1; i++) {
@@ -27,7 +27,7 @@ int main(){
     const int size = 5;
     Student student[size] = {
         Student("Alice", 1),
-        Student("Bob", 2),
+        Student("Bobby", 2),
         Student("Charlie", 3),
         Student("David", 4),
         Student("Eve", 5)
