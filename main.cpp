@@ -27,7 +27,7 @@ int main(){
     const int size = 5;
     Student student[size] = {
         Student("Alice", 1),
-        Student("Bob", 2),
+        Student("Bobby", 2),
         Student("Charlie", 3),
         Student("David", 4),
         Student("Eve", 5)
